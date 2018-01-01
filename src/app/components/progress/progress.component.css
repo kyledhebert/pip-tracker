@@ -1,0 +1,13 @@
+.progress {
+  height: 25px;
+  background-color: #3690C0;
+}
+
+.progress .determinate {
+  background-color: #0570B0;
+}
+
+.progress .progress-text {
+  padding-right: 5px;
+  padding-top: 2px;
+}

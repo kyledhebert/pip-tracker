@@ -1,3 +1,12 @@
-<p>
-  progress works!
-</p>
+<div class="row">
+  <div class="col m6">
+    <div class="progress-text left-align">Spent: {{ totalSpent | currency }}</div>
+  </div>
+  <div class="col m6">
+    <div class="progress-text right-align">Remaining: {{ goal - totalSpent | currency }}</div>
+  </div>
+</div>
+<div class="progress">
+  <div class="determinate" [style.width.%]=progress>
+  </div>
+</div>
