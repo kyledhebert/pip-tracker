@@ -1,0 +1,14 @@
+.collection-item {
+  background-color: #0570B0;
+  margin:10px;
+  border: none;
+  border-radius: 3px;
+}
+
+.collection-item .item-title {
+  font-size: x-large;
+}
+
+.secondary-content {
+  color: #f5f5f5;
+}

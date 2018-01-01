@@ -1,3 +1,38 @@
-<p>
-  expense works!
-</p>
+<li class="collection-item">
+  <div *ngIf=editing>
+
+          <div class="row">
+            <div class="col m7">
+              <input
+                type="text"
+                name="title"
+                autocomplete="off"
+                [value]="expense.title" 
+                (input)="onTitleChange(title.value)"
+                #title>
+            </div>
+            <div class="col m4">
+              <input 
+                type="number"
+                name="cost"
+                autocomplete="off"
+                [value]="expense.cost" min="0" step="0.01" data-number-to-fixed="2" data-number-stepfactor="100"
+                (input)="onCostChange(cost.value)"
+                #cost
+                >
+            </div>
+            <div class="col-m1">
+                <a class="secondary-content clickable" title="save" (click)="toggleEdit()">
+                    <i class="material-icons">save</i>
+                  </a>
+            </div>
+          </div>
+  </div>
+  <div *ngIf=!editing>
+    <span class="item-title">{{ expense.title }}</span>
+    <a class="secondary-content clickable" title="edit expense"  (click)="toggleEdit()"><i class="material-icons">edit</i></a>
+    <a class="secondary-content clickable" title="mark reimbursed" (click)="onToggleReimbursed()"><i class="material-icons">attach_money</i></a>
+    <a class="secondary-content clickable" title="delete expense" (click)="onDelete()"><i class="material-icons">delete</i></a>
+    <div>{{ expense.cost | currency }}</div>
+  </div>
+</li>
