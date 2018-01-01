@@ -1,10 +1,16 @@
 PIP Tracker:
-	- Show Current Date and Time
-	- Show Spending Progress
-	- Show A List of Expenses
-	- User Should Be Able to Add an A New Expense
-	- User Should Be Able to Delete An Expense
-	- User Should Be Able to Edit An Expense
-	- Expenses Should Be Stored in a JSON File
+	- Show Current Date and Time @done
+	- Show Spending Progress @done
+	- Show A List of Expenses @done
+	- User Should Be Able to Add  A New Expense @done
+	- User Should Be Able to Delete An Expense @done
+	- User Should Be Able to Edit An Expense @done
+	- Expenses Should Be Stored in a JSON File @done
+	- Users should be able to mark an expense as reimbursed @done
+	- When adding increment by id of last item in expense array, or generate unique-ish id @done
+	- Update progress bar as items are added or deleted @done
+	- Users should see a prompt to add an expense if there are no expenses @done
+
 	- Users Should Be Able to Set the Spending Goal
-	- 
+	- User should confirm deletion
+	- Use real tooltips? 
