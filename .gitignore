@@ -32,6 +32,7 @@
 npm-debug.log
 testem.log
 /typings
+PIP Tracker.taskpaper
 
 # e2e
 /e2e/*.js
