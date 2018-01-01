@@ -41,3 +41,5 @@ PIP Tracker.taskpaper
 # System Files
 .DS_Store
 Thumbs.db
+
+/release
