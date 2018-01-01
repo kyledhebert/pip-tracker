@@ -1,0 +1,17 @@
+<form #itemForm="ngForm" (ngSubmit)="onSubmit(itemForm)" novalidate>
+  <div class="row">
+    <div class="col m7">
+      <input type="text" name="description" placeholder="Item description" autocomplete="off"
+              ngModel #description="ngModel">
+    </div>
+    <div class="col m4">
+      <input 
+        type="number" name="cost" placeholder="Item cost" autocomplete="off"
+        min="0" step="0.01" data-number-to-fixed="2" data-number-stepfactor="100"
+        ngModel #cost="ngModel">
+    </div>
+    <div class="col-m1">
+        <button class="btn-floating"><i class="material-icons">add</i></button>
+    </div>
+  </div>
+</form>
