@@ -1,0 +1,26 @@
+.date {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 0 10px 0;
+  font-size: 24px;
+  line-height: 1;
+}
+
+.calendar {
+    display: flex;
+    align-items: center;
+}
+
+.calendar .day {
+      font-size: 275%;
+      font-weight: bold;
+}
+
+.calendar .month-year {
+      padding: 0 0 0 5px;
+}
+
+.calendar .month {
+        font-weight: bold;
+}

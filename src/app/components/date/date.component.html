@@ -1,3 +1,10 @@
-<p>
-  date works!
-</p>
+<div class="date">
+  <div class="calendar">
+    <div class="day">{{ today | date:'dd' }}</div>
+    <div class="month-year">
+      <div class="month">{{ today | date:'MMM'}}</div>
+      <div class="year">{{ today | date:'yyyy'}}</div>
+    </div>
+  </div>
+  <div class="today">{{ today | date:'EEEE'}}</div>
+</div>
