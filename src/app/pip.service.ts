@@ -72,7 +72,7 @@ export class PipService {
   }
 
   updateExpense(expense: Expense) {
-    expense['cost'] = parseInt(expense['cost'], 10);
+    expense['cost'] = parseFloat(expense['cost']);
     const updatedExpense: Expense = _.find(this.expenses, ['id', expense.id]);
     _.assign(updatedExpense, expense);
     this.saveAppState();
