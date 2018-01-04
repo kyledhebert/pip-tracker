@@ -50,10 +50,10 @@ export class PipService {
     return this.goal;
   }
 
-  addExpense(expense): Observable<Expense> {
+  addExpense(expense: Expense): Observable<Expense> {
     const newExpense: Expense = {
       id: this.expenses.length + 1 + new Date().valueOf(),
-      title: expense.description,
+      title: expense.title,
       cost: expense.cost,
       reimbursed: false
     };
@@ -62,7 +62,7 @@ export class PipService {
     return Observable.of(newExpense);
   }
 
-  deleteExpense(expense): Observable<Expense> {
+  deleteExpense(expense: Expense): Observable<Expense> {
     const deletedExpense: Expense = _.find(this.expenses, ['id', expense.id]);
     this.expenses = this.expenses.filter((e: Expense) => {
       return e.id !== expense.id;
@@ -71,14 +71,15 @@ export class PipService {
     return Observable.of(deletedExpense);
   }
 
-  updateExpense(expense) {
+  updateExpense(expense: Expense) {
+    expense['cost'] = parseInt(expense['cost'], 10);
     const updatedExpense: Expense = _.find(this.expenses, ['id', expense.id]);
     _.assign(updatedExpense, expense);
     this.saveAppState();
     return Observable.of(updatedExpense);
   }
 
-  toggleReimbursed(expense) {
+  toggleReimbursed(expense: Expense) {
     const toggledExpense: Expense = _.find(this.expenses, ['id', expense.id]);
     toggledExpense.reimbursed = toggledExpense.reimbursed === true ? false : true;
     this.saveAppState();
