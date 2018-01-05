@@ -1,5 +1,7 @@
 # PipTracker
 
+PipTracker is an Angular/Electron app to track personal improvement expenses.
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.5.5.
 
 ## Development server
@@ -12,7 +14,10 @@ Run `ng generate component component-name` to generate a new component. You can 
 
 ## Build
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `-prod` flag for a production build.
+Run `electron-build` to build the project and launch the Electron shell. The build artifacts will be stored in the `dist/` directory. This script uses the `-prod` flag.
+
+## Package
+There are two packaging scripts--one for Mac and another for Windows--that use [electron-packager](https://github.com/electron-userland/electron-packager) to bundle the source code and an Electron executable for distribution. Run either `package-mac` or `package-windows` to package the app for the platform of your choice.
 
 ## Running unit tests
 
