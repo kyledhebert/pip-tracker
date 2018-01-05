@@ -71,7 +71,7 @@ export class PipService {
     return Observable.of(deletedExpense);
   }
 
-  updateExpense(expense: Expense) {
+  updateExpense(expense) {
     expense['cost'] = parseFloat(expense['cost']);
     const updatedExpense: Expense = _.find(this.expenses, ['id', expense.id]);
     _.assign(updatedExpense, expense);
