@@ -5,7 +5,8 @@ PipTracker is an Angular/Electron app to track personal improvement expenses.
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.5.5.
 
 ## Latest Distributions
-[Windows 32](https://www.dropbox.com/s/kr0j459xnakgmsd/windows-installer.zip?dl=0)
+[Mac](https://www.dropbox.com/s/0ejxfwvv2qsdi2e/PIPTracker.dmg?dl=0)
+[Windows](https://www.dropbox.com/s/kr0j459xnakgmsd/windows-installer.zip?dl=0)
 
 
 ## Development server
