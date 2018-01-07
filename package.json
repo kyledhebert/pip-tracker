@@ -16,7 +16,8 @@
     "electron-build": "ng build --prod && electron .",
     "package-mac": "electron-packager . --overwrite --platform=darwin --arch=x64 --icon=assets/icons/mac/icon.icns --prune=true --out=release-builds",
     "package-windows": "electron-packager . --overwrite --platform=win32 --arch=ia32 --icon=assets/icons/win/icon.ico --prune=true --out=release-builds",
-    "create-installer-win": "node installers/windows/createinstaller.js"
+    "create-installer-mac": "electron-installer-dmg ./release-builds/PIP\\ Tracker-darwin-x64/PIP\\ Tracker.app/ PIPTracker --out=release-builds --overwrite --icon=assets/icons/mac/icon.icns",
+    "create-installer-windows": "node installers/windows/createinstaller.js"
   },
   "private": true,
   "dependencies": {
@@ -31,8 +32,6 @@
     "@angular/router": "^5.0.0",
     "core-js": "^2.4.1",
     "electron": "^1.7.9",
-    "electron-build": "0.0.3",
-    "electron-packager": "^10.1.1",
     "lodash": "^4.17.4",
     "materialize-css": "^0.100.2",
     "rxjs": "^5.5.2",
@@ -47,9 +46,10 @@
     "@types/lodash": "^4.14.87",
     "@types/node": "~6.0.60",
     "codelyzer": "^4.0.1",
-    "electron-winstaller": "^2.6.3",
     "electron-build": "0.0.3",
+    "electron-installer-dmg": "^0.2.1",
     "electron-packager": "^10.1.1",
+    "electron-winstaller": "^2.6.3",
     "jasmine-core": "~2.6.2",
     "jasmine-spec-reporter": "~4.1.0",
     "karma": "~1.7.0",
