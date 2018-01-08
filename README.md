@@ -6,6 +6,7 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 
 ## Latest Distributions
 [Mac](https://www.dropbox.com/s/0ejxfwvv2qsdi2e/PIPTracker.dmg?dl=0)
+
 [Windows](https://www.dropbox.com/s/kr0j459xnakgmsd/windows-installer.zip?dl=0)
 
 
